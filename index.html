@@ -4,46 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <span>
-        {007}<br />
-        pavanmg
-      </span>
+      <img class="logo" width="60px" src="public/logo.svg" />
 
-      <span>
-        <span>Home</span>
-        <span>About</span>
-        <span>Tech Stack</span>
-        <span>Projects</span>
-        <span>Contact</span>
-      </span>
+      <div class="topbar">
+        <span class="nav-menu">
+          <span>Home</span>
+          <span>About</span>
+          <span>Tech Stack</span>
+          <span>Projects</span>
+          <span>Contact</span>
+        </span>
 
-      <span>
-        <img src="public/github_gray.svg" />
-        <img src="public/twitter_gray.svg" />
-        <img src="public/in_gray.svg" />
-      </span>
+        <span>
+          <img src="public/github_gray.svg" />
+          <img src="public/twitter_gray.svg" />
+          <img src="public/in_gray.svg" />
+        </span>
+      </div>
     </header>
 
     <nav>
-      <span>
-        Hi 👋, <br />
-        My name is <br />
-        <span>Jina Park</span> <br />
-        I build things for web
-      </span>
-      <span>
-        <img width="150" src="public/profile.jpg" />
-      </span>
+      <div class="introduce">
+        <div class="frame">
+          <img width="150" src="public/profile.jpg" />
+        </div>
+        <div class="text">
+          Hi 👋, <br />
+          My name is <br />
+          <span>Jina Park</span> <br />
+          I build things for web
+        </div>
+      </div>
     </nav>
 
     <main>
-      <section>
-        <div>My Tech Stack</div>
-        <div>Technologies I've been working with recently</div>
-        <div>
+      <section class="main-text">
+        <div id="title">My Tech Stack</div>
+        <div class="text-explain">Technologies I've been working with recently</div>
+        <div class="tech-image">
           <img src="public/skill/html.svg" />
           <img src="public/skill/css.svg" />
           <img src="public/skill/js.svg" />
@@ -53,161 +55,177 @@
         </div>
       </section>
 
-      <section>
-        <div>Projects</div>
-        <div>Things I've built so far</div>
+      <section class="main-text">
+        <div id="title">Projects</div>
+        <div class="text-explain">Things I've built so far</div>
 
-        <div style="border: 1px solid black">
-          <img width="150" src="public/personal.svg" />
-          <div>지극히 개인적인, 나만의 감각을 찾아주는 Personal</div>
-          <div>
-            This is sample project description random things are here in
-            description This is sample project lorem ipsum generator for dummy
-            content
-          </div>
-          <div>
-            <span>Tech stack: </span>
-            <span>HTML, CSS, JavaScript, React</span>
-          </div>
-          <div>
-            <span>
-              <img src="public/link.svg" />
-              Live Preview
-            </span>
-            <span>
-              <img src="public/github_black.svg" />
-              View Code
-            </span>
-          </div>
-        </div>
+        <div class="cards">
+          <div class="card">
+            <img width="180" src="public/personal.svg" />
+            <div class="card-title">
+              지극히 개인적인, 나만의 감각을 찾아주는 Personal
+            </div>
+            <div class="card-text">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </div>
 
-        <div style="border: 1px solid black">
-          <img width="150" src="public/profile.jpg" />
-          <div>Project Tile goes here2</div>
-          <div>
-            This is sample project description random things are here in
-            description This is sample project lorem ipsum generator for dummy
-            content
+            <div class="card-bottom">
+              <span>Tech stack: </span>
+              HTML, CSS, JavaScript, React
+            </div>
+            <div class="card-link">
+              <span>
+                <img width="16px" src="public/link.svg" />
+                Live Preview
+              </span>
+              <span>
+                <img width="16px" src="public/github_black.svg" />
+                View Code
+              </span>
+            </div>
           </div>
-          <div>
-            <span>Tech stack: </span>
-            <span>HTML, JavaScript, React</span>
-          </div>
-          <div>
-            <span>
-              <img src="public/link.svg" />
-              Live Preview
-            </span>
-            <span>
-              <img src="public/github_black.svg" />
-              View Code
-            </span>
-          </div>
-        </div>
 
-        <div style="border: 1px solid black">
-          <img width="150" src="public/profile.jpg" />
-          <div>Project Tile goes here3</div>
-          <div>
-            This is sample project description random things are here in
-            description This is sample project lorem ipsum generator for dummy
-            content
-          </div>
-          <div>
-            <span>Tech stack: </span>
-            <span>HTML, JavaScript, React</span>
-          </div>
-          <div>
-            <span>
-              <img src="public/link.svg" />
-              Live Preview
-            </span>
-            <span>
-              <img src="public/github_black.svg" />
-              View Code
-            </span>
-          </div>
-        </div>
+          <div class="card">
+            <img width="180" src="public/personal.svg" />
+            <div class="card-title">
+              지극히 개인적인, 나만의 감각을 찾아주는 Personal
+            </div>
+            <div class="card-text">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </div>
 
-        <div style="border: 1px solid black">
-          <img width="150" src="public/profile.jpg" />
-          <div>Project Tile goes here4</div>
-          <div>
-            This is sample project description random things are here in
-            description This is sample project lorem ipsum generator for dummy
-            content
+            <div class="card-bottom">
+              <span>Tech stack: </span>
+              HTML, CSS, JavaScript, React
+            </div>
+            <div class="card-link">
+              <span>
+                <img width="16px" src="public/link.svg" />
+                Live Preview
+              </span>
+              <span>
+                <img width="16px" src="public/github_black.svg" />
+                View Code
+              </span>
+            </div>
           </div>
-          <div>
-            <span>Tech stack: </span>
-            <span>HTML, JavaScript, React</span>
-          </div>
-          <div>
-            <span>
-              <img src="public/link.svg" />
-              Live Preview
-            </span>
-            <span>
-              <img src="public/github_black.svg" />
-              View Code
-            </span>
-          </div>
-        </div>
 
-        <div style="border: 1px solid black">
-          <img width="150" src="public/profile.jpg" />
-          <div>Project Tile goes here5</div>
-          <div>
-            This is sample project description random things are here in
-            description This is sample project lorem ipsum generator for dummy
-            content
-          </div>
-          <div>
-            <span>Tech stack: </span>
-            <span>HTML, JavaScript, React</span>
-          </div>
-          <div>
-            <span>
-              <img src="public/link.svg" />
-              Live Preview
-            </span>
-            <span>
-              <img src="public/github_black.svg" />
-              View Code
-            </span>
-          </div>
-        </div>
+          <div class="card">
+            <img width="180" src="public/personal.svg" />
+            <div class="card-title">
+              지극히 개인적인, 나만의 감각을 찾아주는 Personal
+            </div>
+            <div class="card-text">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </div>
 
-        <div style="border: 1px solid black">
-          <img width="150" src="public/profile.jpg" />
-          <div>Project Tile goes here6</div>
-          <div>
-            This is sample project description random things are here in
-            description This is sample project lorem ipsum generator for dummy
-            content
+            <div class="card-bottom">
+              <span>Tech stack: </span>
+              HTML, CSS, JavaScript, React
+            </div>
+            <div class="card-link">
+              <span>
+                <img width="16px" src="public/link.svg" />
+                Live Preview
+              </span>
+              <span>
+                <img width="16px" src="public/github_black.svg" />
+                View Code
+              </span>
+            </div>
           </div>
-          <div>
-            <span>Tech stack: </span>
-            <span>HTML, JavaScript, React</span>
+
+          <div class="card">
+            <img width="180" src="public/personal.svg" />
+            <div class="card-title">
+              지극히 개인적인, 나만의 감각을 찾아주는 Personal
+            </div>
+            <div class="card-text">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </div>
+
+            <div class="card-bottom">
+              <span>Tech stack: </span>
+              HTML, CSS, JavaScript, React
+            </div>
+            <div class="card-link">
+              <span>
+                <img width="16px" src="public/link.svg" />
+                Live Preview
+              </span>
+              <span>
+                <img width="16px" src="public/github_black.svg" />
+                View Code
+              </span>
+            </div>
           </div>
-          <div>
-            <span>
-              <img src="public/link.svg" />
-              Live Preview
-            </span>
-            <span>
-              <img src="public/github_black.svg" />
-              View Code
-            </span>
+
+          <div class="card">
+            <img width="180" src="public/personal.svg" />
+            <div class="card-title">
+              지극히 개인적인, 나만의 감각을 찾아주는 Personal
+            </div>
+            <div class="card-text">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </div>
+
+            <div class="card-bottom">
+              <span>Tech stack: </span>
+              HTML, CSS, JavaScript, React
+            </div>
+            <div class="card-link">
+              <span>
+                <img width="16px" src="public/link.svg" />
+                Live Preview
+              </span>
+              <span>
+                <img width="16px" src="public/github_black.svg" />
+                View Code
+              </span>
+            </div>
           </div>
-        </div>
+
+          <div class="card">
+            <img width="180" src="public/personal.svg" />
+            <div class="card-title">
+              지극히 개인적인, 나만의 감각을 찾아주는 Personal
+            </div>
+            <div class="card-text">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </div>
+
+            <div class="card-bottom">
+              <span>Tech stack: </span>
+              HTML, CSS, JavaScript, React
+            </div>
+            <div class="card-link">
+              <span>
+                <img width="16px" src="public/link.svg" />
+                Live Preview
+              </span>
+              <span>
+                <img width="16px" src="public/github_black.svg" />
+                View Code
+              </span>
+            </div>
+          </div>
       </section>
     </main>
 
     <footer>
-      <span>
-        {007}<br />
-        pavanmg
-      </span>
+      <img src="public/logo_navy.svg" width="60px">
 
       <span>
         <span>+91 12345 09876</span>
