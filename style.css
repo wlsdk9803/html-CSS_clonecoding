@@ -1,0 +1,153 @@
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #fdfdfd;
+}
+.topbar {
+  margin: 0 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  gap: 5px;
+}
+.nav-menu a {
+  color: #666666;
+  font-size: 17px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+.introduce {
+  display: flex;
+  margin: 7em 0;
+  padding: 10px;
+  justify-content: space-between;
+}
+.introduce .text {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 1%;
+  color: #42446e;
+}
+.introduce .text span {
+  background-image: linear-gradient(to right, #13b0f5, #e70faa);
+  background-clip: text;
+  color: transparent;
+}
+.frame {
+  float: right;
+  background: black;
+  border-radius: 50%;
+  width: 12em;
+  height: 12em;
+  padding: 5px;
+  margin-right: 1%;
+  background: linear-gradient(to bottom, #e70faa, #00c0fd);
+}
+.frame img {
+  border-radius: 50%;
+  width: 12em;
+  height: 12em;
+}
+.main-text {
+  text-align: center;
+  color: #666666;
+  margin: 5em 0;
+}
+.main-text #title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #42446e;
+  margin-bottom: 0.5em;
+}
+.main-text .text-explain {
+  padding-bottom: 2em;
+}
+.main-text .cards {
+  color: black;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+}
+.cards .card {
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.3);
+  background: white;
+  border-radius: 20px;
+  padding: 10px 20px 30px 20px;
+  justify-content: space-between;
+  margin: 1em;
+}
+.card-title {
+  font-weight: bold;
+  margin: 10px 0;
+  background: white;
+}
+.card-text {
+  text-align: left;
+  font-weight: 300;
+  margin: 10px 0;
+  background: white;
+  color: #666666;
+}
+.card-bottom {
+  background: white;
+  color: #42446e;
+  margin: 20px 0;
+  text-align: left;
+  font-weight: 300;
+  font-size: 12px;
+}
+.card-bottom span {
+  background: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.card-link,
+.card-link img,
+.card-link span {
+  background-color: white;
+}
+.card-link {
+  display: flex;
+  justify-content: space-around;
+}
+.card-link a {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+footer {
+  margin: auto;
+  width: 95%;
+}
+footer .context {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #42446e;
+  padding-top: 20px;
+}
+footer .context span {
+  padding: 0 4em 0 0;
+}
+footer .contact {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .bottom {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 13px;
+  background-image: linear-gradient(to right, #13b0f5, #e70faa);
+  background-clip: text;
+  color: transparent;
+}
+footer .bottom span {
+  color: #666666;
+}
