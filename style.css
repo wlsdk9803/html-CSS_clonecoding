@@ -17,10 +17,11 @@ header .logo {
 .nav-menu {
   padding: 0 5%;
 }
-.nav-menu span {
+.nav-menu a {
   color: #666666;
   font-size: 17px;
   padding: 0 10px;
+  text-decoration: none;
 }
 .introduce {
   margin: 7em 1em;
@@ -115,8 +116,8 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
-.card-link span {
-  text-decoration: underline;
+.card-link a {
+  color: black;
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
