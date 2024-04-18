@@ -3,14 +3,15 @@
   background-color: #fdfdfd;
 }
 .topbar {
+  margin: 0 2%;
   padding-top: 20px;
-  padding-right: 70px;
+  padding-right: 11%;
   display: flex;
   justify-content: flex-end;
 }
-.logo {
+header .logo {
   float: left;
-  padding: 20px 0 20px 70px;
+  padding: 20px 0 20px 11%;
 }
 .nav-menu {
   padding: 0 5%;
@@ -66,16 +67,16 @@
 }
 .main-text .cards {
   color: black;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 .cards .card {
-  box-shadow: 0 0 5px 1px rgba(126, 126, 126, 0.3);
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.3);
   background: white;
   border-radius: 20px;
-  width: 370px;
-  height: 540px;
-  padding: 10px 20px;
+  padding: 10px 20px 30px 20px;
   justify-content: space-between;
   margin: 1em;
 }
@@ -109,10 +110,43 @@
 .card-link span {
   background-color: white;
 }
+.card-link {
+  display: flex;
+  justify-content: space-around;
+}
 .card-link span {
   text-decoration: underline;
-  margin: 2em;
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+}
+footer .contact {
+  color: #42446e;
+  margin: 0 2%;
+  padding-top: 20px;
+  padding-right: 6.5%;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .contact span {
+  padding: 0 4em 0 0;
+}
+footer .logo {
+  float: left;
+  padding: 20px 0 20px 7%;
+}
+footer .bottom {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 13px;
+  background-image: linear-gradient(to right, #13b0f5, #e70faa);
+  background-clip: text;
+  color: transparent;
+}
+footer .bottom span {
+  color: #666666;
+}
+footer .line {
+  display: flex;
+  justify-content: center;
 }
