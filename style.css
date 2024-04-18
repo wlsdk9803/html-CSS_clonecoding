@@ -1,21 +1,19 @@
 body {
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1100px;
   background-color: #fdfdfd;
 }
 .topbar {
   margin: 0 2%;
-  padding-top: 20px;
-  padding-right: 6.5%;
   display: flex;
-  justify-content: flex-end;
-}
-header .logo {
-  float: left;
-  padding: 20px 0 20px 11%;
+  justify-content: space-between;
 }
 .nav-menu {
-  padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  gap: 5px;
 }
 .nav-menu a {
   color: #666666;
@@ -24,13 +22,15 @@ header .logo {
   text-decoration: none;
 }
 .introduce {
-  margin: 7em 1em;
+  display: flex;
+  margin: 7em 0;
   padding: 10px;
+  justify-content: space-between;
 }
 .introduce .text {
   font-size: 30px;
   font-weight: bold;
-  padding-left: 10%;
+  margin-left: 1%;
   color: #42446e;
 }
 .introduce .text span {
@@ -45,7 +45,7 @@ header .logo {
   width: 12em;
   height: 12em;
   padding: 5px;
-  margin-right: 7%;
+  margin-right: 1%;
   background: linear-gradient(to bottom, #e70faa, #00c0fd);
 }
 .frame img {
@@ -122,20 +122,24 @@ header .logo {
   font-weight: 500;
   cursor: pointer;
 }
-footer .contact {
+footer {
+  margin: auto;
+  width: 95%;
+}
+footer .context {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: #42446e;
   margin: 0 2%;
   padding-top: 20px;
-  padding-right: 6.5%;
-  display: flex;
-  justify-content: flex-end;
 }
-footer .contact span {
+footer .context span {
   padding: 0 4em 0 0;
 }
-footer .logo {
-  float: left;
-  padding: 20px 0 20px 7%;
+footer .contact {
+  display: flex;
+  justify-content: flex-end;
 }
 footer .bottom {
   text-align: center;
@@ -147,8 +151,4 @@ footer .bottom {
 }
 footer .bottom span {
   color: #666666;
-}
-footer .line {
-  display: flex;
-  justify-content: center;
 }
