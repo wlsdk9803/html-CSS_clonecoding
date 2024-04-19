@@ -21,6 +21,35 @@ body {
   padding: 0 10px;
   text-decoration: none;
 }
+.nav-menu img {
+  width: 30px;
+}
+.nav-menu-mobile {
+  display: none;
+}
+@media (max-width: 700px) {
+  .nav-menu a {
+    display: none;
+  }
+  .nav-menu img {
+    width: 28.8px;
+  }
+  .nav-menu-mobile {
+    display: block;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+  .nav-menu-mobile a {
+    display: block;
+    color: #666666;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0 10px;
+    text-decoration: none;
+  }
+}
 .introduce {
   display: flex;
   margin: 7em 0;
@@ -39,12 +68,11 @@ body {
   color: transparent;
 }
 .frame {
-  float: right;
-  background: black;
   border-radius: 50%;
   width: 12em;
   height: 12em;
   padding: 5px;
+  margin-bottom: 10px;
   margin-right: 1%;
   background: linear-gradient(to bottom, #e70faa, #00c0fd);
 }
@@ -53,6 +81,16 @@ body {
   width: 12em;
   height: 12em;
 }
+@media (max-width: 700px) {
+  .introduce {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .introduce .text {
+    text-align: center;
+  }
+}
+
 .main-text {
   text-align: center;
   color: #666666;
@@ -69,12 +107,19 @@ body {
 }
 .main-text .cards {
   color: black;
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+@media (max-width: 700px) {
+  .main-text .tech-image img {
+    width: 80px;
+  }
+}
+
 .cards .card {
+  width: 320px;
+  height: 540px;
   box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.3);
   background: white;
   border-radius: 20px;
@@ -83,12 +128,15 @@ body {
   margin: 1em;
 }
 .card-title {
+  font-size: 21px;
+  font-weight: 500;
   font-weight: bold;
   margin: 10px 0;
   background: white;
 }
 .card-text {
   text-align: left;
+  font-size: 18px;
   font-weight: 300;
   margin: 10px 0;
   background: white;
@@ -97,15 +145,15 @@ body {
 .card-bottom {
   background: white;
   color: #42446e;
-  margin: 20px 0;
+  margin: 25px 0;
   text-align: left;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
 }
 .card-bottom span {
   background: white;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .card-link,
 .card-link img,
@@ -140,6 +188,9 @@ footer .contact {
   display: flex;
   justify-content: flex-end;
 }
+footer .contact img {
+  width: 28.8px;
+}
 footer .bottom {
   text-align: center;
   padding: 30px 0;
@@ -150,4 +201,28 @@ footer .bottom {
 }
 footer .bottom span {
   color: #666666;
+}
+footer .bottom span .footer-bottom-br {
+  display: none;
+}
+@media (max-width: 700px) {
+  footer .contact {
+    flex-direction: column;
+  }
+  footer .contact .tel {
+    display: none;
+  }
+  footer .contact div img {
+    padding: 0 10px;
+  }
+  footer .bottom span .footer-bottom-br {
+    display: inline-block;
+  }
+  footer .context .contact {
+    text-align: right;
+  }
+  footer .context .contact span {
+    padding: 0 0.7em 0 0;
+    margin-bottom: 2px;
+  }
 }
